@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="test" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="D:\opencv\opencv\MinGW\Debug\install\include" />
+				</Compiler>
+				<Linker>
+					<Add library="D:\opencv\opencv\MinGW\Debug\install\lib\libopencv_calib3d231d.dll.a" />
+					<Add library="D:\opencv\opencv\MinGW\Debug\install\lib\libopencv_contrib231d.dll.a" />
+					<Add library="D:\opencv\opencv\MinGW\Debug\install\lib\libopencv_core231d.dll.a" />
+					<Add library="D:\opencv\opencv\MinGW\Debug\install\lib\libopencv_features2d231d.dll.a" />
+					<Add library="D:\opencv\opencv\MinGW\Debug\install\lib\libopencv_flann231d.dll.a" />
+					<Add library="D:\opencv\opencv\MinGW\Debug\install\lib\libopencv_gpu231d.dll.a" />
+					<Add library="D:\opencv\opencv\MinGW\Debug\install\lib\libopencv_highgui231d.dll.a" />
+					<Add library="D:\opencv\opencv\MinGW\Debug\install\lib\libopencv_imgproc231d.dll.a" />
+					<Add library="D:\opencv\opencv\MinGW\Debug\install\lib\libopencv_legacy231d.dll.a" />
+					<Add library="D:\opencv\opencv\MinGW\Debug\install\lib\libopencv_ml231d.dll.a" />
+					<Add library="D:\opencv\opencv\MinGW\Debug\install\lib\libopencv_objdetect231d.dll.a" />
+					<Add library="D:\opencv\opencv\MinGW\Debug\install\lib\libopencv_ts231d.a" />
+					<Add library="D:\opencv\opencv\MinGW\Debug\install\lib\libopencv_video231d.dll.a" />
+					<Add directory="D:\opencv\opencv\MinGW\Debug\install\bin" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
